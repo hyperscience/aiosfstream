@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 here = os.path.abspath(os.path.dirname(__file__))
 
 INSTALL_REQUIRES = [
-    "aiocometd>=0.4.1,<0.5.0",
+    "aiocometd-noloop==0.4.9",
     "aiohttp>=3.1,<4.0"
 ]
 TESTS_REQUIRE = [
@@ -41,19 +41,18 @@ setup(
     classifiers=[
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: Implementation :: CPython",
         "Framework :: AsyncIO",
         "License :: OSI Approved :: MIT License"
     ],
     keywords=metadata["KEYWORDS"],
     author=metadata["AUTHOR"],
-    author_email=metadata["AUTHOR_EMAIL"],
     url=metadata["URL"],
     project_urls=metadata["PROJECT_URLS"],
     license="MIT",
     packages=find_packages(exclude=("tests*", )),
-    python_requires=">=3.6.0",
+    python_requires=">=3.11.0",
     install_requires=INSTALL_REQUIRES,
     tests_require=TESTS_REQUIRE,
     extras_require={

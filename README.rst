@@ -75,8 +75,7 @@ Usage
                 print(f"{topic}: {data}")
 
     if __name__ == "__main__":
-        loop = asyncio.get_event_loop()
-        loop.run_until_complete(stream_events())
+        asyncio.run(stream_events())
 
 Documentation
 -------------
@@ -93,12 +92,12 @@ Install
 Requirements
 ------------
 
-- Python 3.6+
+- Python 3.10+
 - aiohttp_
-- aiocometd_
+- aiocometd-noloop_
 
 .. _aiohttp: https://github.com/aio-libs/aiohttp/
-.. _aiocometd: https://github.com/robertmrk/aiocometd/
+.. _aiocometd-noloop: https://github.com/Kieran-Lock/aiocometd-noloop
 .. _asyncio: https://docs.python.org/3/library/asyncio.html
 .. _api: https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/intro_stream.htm
 .. _PushTopic: https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/working_with_pushtopics.htm
