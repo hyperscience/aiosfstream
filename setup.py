@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 here = os.path.abspath(os.path.dirname(__file__))
 
 INSTALL_REQUIRES = [
-    "aiocometd-noloop==0.4.9",
+    "aiocometd==0.4.5+hs0",
     "aiohttp>=3.1,<4.0"
 ]
 TESTS_REQUIRE = [
