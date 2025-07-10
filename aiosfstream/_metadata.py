@@ -8,5 +8,5 @@ PROJECT_URLS = {
     "Coverage": "https://coveralls.io/github/robertmrk/aiosfstream",
     "Docs": "http://aiosfstream.readthedocs.io/"
 }
-VERSION = "0.5.0+hs0"
+VERSION = "0.5.0+hs1"
 AUTHOR = "Hyperscience"
